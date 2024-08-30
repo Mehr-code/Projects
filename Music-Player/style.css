@@ -1,0 +1,146 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  background: #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 12px;
+}
+
+.player-container {
+  height: 500px;
+  width: 400px;
+  background-color: #333;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+}
+
+.img-container {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+article {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+h2 {
+  font-size: 40px;
+  margin: 0;
+  color: #dedede;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #00fee9;
+}
+
+.duration-wrapper {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #dedede;
+}
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  height: 4px;
+  width: 90%;
+  transform: translate(0, -1.5rem);
+}
+
+.progress {
+  background: #00fee9;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0%;
+  transition: width 0.1s linear;
+}
+/* Controls */
+.player-controls {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(0, -50%);
+}
+
+.bx {
+  font-size: 60px;
+  color: #dedede;
+  cursor: pointer;
+
+  &:hover {
+    color: #00fee9;
+    transition: ease 0.5s;
+  }
+}
+
+.main-button {
+  font-size: 70px;
+  position: relative;
+  top: 3px;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 390px) {
+  .player-container {
+    width: 95vw;
+  }
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
