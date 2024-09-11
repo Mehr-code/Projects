@@ -19,7 +19,13 @@
 
           <!-- Backlog Content -->
           <div id="backlog-content" class="custom-scroll">
-            <ul class="drag-item-list" id="backlog-list">
+            <ul
+              class="drag-item-list"
+              id="backlog-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(0)"
+            >
               <!-- <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
@@ -44,7 +50,13 @@
           </span>
           <!-- Progress Content -->
           <div id="progress-content" class="custom-scroll">
-            <ul class="drag-item-list" id="progress-list">
+            <ul
+              class="drag-item-list"
+              id="progress-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(1)"
+            >
               <!-- <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
@@ -69,7 +81,13 @@
           </span>
           <!-- complete Content -->
           <div id="complete-content" class="custom-scroll">
-            <ul class="drag-item-list" id="complete-list">
+            <ul
+              class="drag-item-list"
+              id="complete-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(2)"
+            >
               <!-- <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
@@ -94,7 +112,13 @@
           </span>
           <!-- on-hold Content -->
           <div id="on-hold-content" class="custom-scroll">
-            <ul class="drag-item-list" id="on-hold-list">
+            <ul
+              class="drag-item-list"
+              id="on-hold-list"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+              ondragenter="dragEnter(3)"
+            >
               <!-- <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
               <li class="drag-item">Testing</li>
