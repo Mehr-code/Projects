@@ -2,12 +2,14 @@ import Nike1 from "../assets/n1-min.png";
 export function ShoeDatail() {
   return (
     <div className="flex flex-col lg:flex-row-reverse space-y-4">
-      {/* Img */}
+      {/* Shoe Image */}
       <div className="flex-1 ">
-        <img src={Nike1} alt="" />
+        <div className="bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
+          <img src={Nike1} alt="" />
+        </div>
       </div>
 
-      {/* Descrition */}
+      {/* Shoe text details */}
       <div className="flex-1 space-y-6">
         {/* Header */}
         <div className="text-5xl font-black md:text-9xl">Nike Air max 270</div>
