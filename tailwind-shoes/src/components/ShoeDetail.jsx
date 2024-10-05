@@ -3,8 +3,8 @@ export function ShoeDatail() {
   return (
     <div className="flex flex-col lg:flex-row-reverse space-y-4">
       {/* Shoe Image */}
-      <div className="flex-1 ">
-        <div className="bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
+      <div className=" flex-1 lg:-mt-[6rem] lg:ml-28">
+        <div className="flex-center h-full bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
           <img src={Nike1} alt="" />
         </div>
       </div>
