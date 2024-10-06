@@ -1,9 +1,11 @@
 import Nike1 from "../assets/n1-min.png";
+import { QTY, SIZES } from "../constant";
+import { Select } from "./Select";
 export function ShoeDatail() {
   return (
     <div className="flex flex-col lg:flex-row-reverse space-y-4">
       {/* Shoe Image */}
-      <div className=" flex-1 lg:-mt-[6rem] lg:ml-28">
+      <div className=" flex-1 lg:-mt-24 lg:ml-28">
         <div className="flex-center h-full bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
           <img src={Nike1} alt="" />
         </div>
@@ -21,6 +23,10 @@ export function ShoeDatail() {
         </div>
         {/* Price */}
         <div className="text-3xl font-extrabold md:text-4xl">100 $</div>
+
+        <Select title={"QTY"} options={QTY} />
+        <Select title={"SIZE"} options={SIZES} />
+
         {/* Button */}
         <div className="space-x-10">
           <button className="h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700">

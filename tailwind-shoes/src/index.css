@@ -8,7 +8,7 @@
   }
 }
 
-@layer utilities {
+@layer directives {
   .flex-center {
     @apply flex items-center justify-center;
   }
