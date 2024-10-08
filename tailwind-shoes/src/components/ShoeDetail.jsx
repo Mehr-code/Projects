@@ -21,11 +21,15 @@ export function ShoeDatail() {
             "The Nike Air Max 270 is a lifestyle shoe that's sure to turn heads with its vibrant color gradient"
           }
         </div>
-        {/* Price */}
-        <div className="text-3xl font-extrabold md:text-4xl">100 $</div>
 
-        <Select title={"QTY"} options={QTY} />
-        <Select title={"SIZE"} options={SIZES} />
+        {/* options & price */}
+        <div className="flex space-x-6">
+          {/* Price */}
+          <div className="text-3xl font-extrabold md:text-4xl">100 $</div>
+
+          <Select title={"QTY"} options={QTY} />
+          <Select title={"SIZE"} options={SIZES} />
+        </div>
 
         {/* Button */}
         <div className="space-x-10">
