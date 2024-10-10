@@ -8,8 +8,11 @@
   }
 }
 
-@layer directives {
+@layer utilities {
   .flex-center {
     @apply flex items-center justify-center;
+  }
+  .btn-press-anim {
+    @apply active:scale-75 transition;
   }
 }
