@@ -7,7 +7,7 @@ export function ShoeDatail() {
       {/* Shoe Image */}
       <div className=" flex-1 lg:-mt-24 lg:ml-28">
         <div className="flex-center h-full bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
-          <img src={Nike1} alt="" />
+          <img src={Nike1} alt="" className="animate-float" />
         </div>
       </div>
 
