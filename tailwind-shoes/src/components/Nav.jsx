@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const ROUTES = ["Home", "About", "Services", "Pricing", "Contact"];
 
-export function Nav() {
+export function Nav({ onClickShoppingBtn }) {
   const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
 
   return (
