@@ -43,7 +43,10 @@ export function Nav({ onClickShoppingBtn }) {
       </div>
 
       {/* Cart button */}
-      <div className="btn-press-anim fixed bottom-4 left-4 lg:static lg:mr-8">
+      <div
+        onClick={onClickShoppingBtn}
+        className="btn-press-anim fixed bottom-4 left-4 lg:static lg:mr-8"
+      >
         <div className="h-12 w-12 rounded-full bg-white shadow-md flex-center cursor-pointer">
           <TbShoppingBag />
         </div>
