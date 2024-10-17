@@ -10,9 +10,7 @@ export function Sidebar({ Children, isOpen, onClickClose }) {
         >
           X
         </button>
-        {Children}
       </div>
-
       {/* Overlay */}
       {isOpen && (
         <div className="fixed left-0 top-0 z-20 h-full w-full bg-black opacity-50"></div>
